@@ -1,0 +1,22 @@
+{
+  "name": "CPP Container",
+  "dockerComposeFile": ["docker-compose.yaml"],
+  "service": "dev",
+  "workspaceFolder": "/workspace",
+  "mounts": [
+    "source=${localEnv:HOME}/.gitconfig,target=/home/dev/.gitconfig,type=bind,consistency=cached"
+  ],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      },
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "eamodio.gitlens",
+        "esbenp.prettier-vscode",
+        "ms-vscode.cpptools-extension-pack"
+      ]
+    }
+  }
+}

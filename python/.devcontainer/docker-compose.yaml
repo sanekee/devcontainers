@@ -1,0 +1,10 @@
+services:
+  python-sdev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ..:/workspace
+    command: sleep infinity
+    ports:
+      - 3000:3000

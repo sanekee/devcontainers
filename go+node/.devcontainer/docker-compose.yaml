@@ -1,0 +1,12 @@
+services:
+  go-node-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - GO_VERSION=1.25.5
+    volumes:
+      - ..:/workspace
+    command: sleep infinity
+    ports:
+      - 13000:3000

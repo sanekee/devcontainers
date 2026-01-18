@@ -1,0 +1,3 @@
+services:
+  go-node-dev:
+    volumes:
