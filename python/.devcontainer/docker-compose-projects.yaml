@@ -1,0 +1,4 @@
+services:
+  python-dev:
+    volumes:
+      - /home/keech/src/lens:/workspace/lens

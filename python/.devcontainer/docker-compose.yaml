@@ -1,5 +1,5 @@
 services:
-  python-sdev:
+  python-dev:
     build:
       context: .
       dockerfile: Dockerfile
