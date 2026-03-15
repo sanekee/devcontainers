@@ -7,20 +7,4 @@ services:
       - ..:/workspace
     command: sleep infinity
     depends_on:
-      - mysql
 
-  mysql:
-    image: mysql:8.3
-    restart: unless-stopped
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: app
-      MYSQL_USER: dev
-      MYSQL_PASSWORD: devpass
-    ports:
-      - "3306:3306"
-    volumes:
-      - mysql-data:/var/lib/mysql
-
-volumes:
-  mysql-data:
