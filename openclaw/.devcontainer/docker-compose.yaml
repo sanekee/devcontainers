@@ -1,0 +1,12 @@
+services:
+  openclaw-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ..:/workspace
+    command: sleep infinity
+    ports:
+      - 20022:22
+      - 28080:8080
+      - 18789:18789
