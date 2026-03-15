@@ -1,3 +1,4 @@
 services:
   go-node-dev:
     volumes:
+      /home/keech/src/openclaw:/workspace/openclaw:delegated
